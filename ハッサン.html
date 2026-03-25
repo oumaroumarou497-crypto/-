@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Bienvenue</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .container {
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        animation: slideDown 1.5s ease;
+    }
+
+    p {
+        font-size: 1.2em;
+        opacity: 0;
+        animation: fadeIn 3s forwards;
+        animation-delay: 1.5s;
+    }
+
+    .loader {
+        margin: 20px auto;
+        border: 5px solid rgba(255,255,255,0.3);
+        border-top: 5px solid white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+        from { transform: translateY(-50px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bienvenue sur mon site</h1>
+    <div class="loader"></div>
+    <p>🚧 Le site est actuellement en développement 🚧</p>
+    <p>Merci pour votre visite 🙏</p>
+</div>
+
+</body>
+</html>
