@@ -41,12 +41,20 @@ p {
 
 <style>
 body {
-  margin: 0;
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  color: white;
-  text-align: center;
-  font-family: Arial, sans-serif;
+  <div class="anime" onclick="playVideo('naruto.mp4')">
+<img src="https://via.placeholder.com/150x220?text=Naruto">
+</div>
+
+<div class="video" id="videoPlayer"></div>
+
+<script>
+function playVideo(src) {
+document.getElementById("videoPlayer").innerHTML =
+`<video width="100%" controls autoplay>
+<source src="${src}" type="video/mp4">
+</video>`;
 }
+</script>
 
 /* HEADER */
 header {
