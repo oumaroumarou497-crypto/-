@@ -104,7 +104,21 @@ footer {
 
 <body>
 
+</div>  <!-- container -->
 
+<div class="video" id="videoPlayer"></div>
+
+<script>
+function playVideo(src) {
+document.getElementById("videoPlayer").innerHTML =
+`<video width="100%" controls autoplay>
+<source src="${src}" type="video/mp4">
+</video>`;
+}
+</script>
+
+</body>
+</html>
 
   
   
