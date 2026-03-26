@@ -102,9 +102,10 @@ footer {
 
 </head>
 
-<body>
-
-</div>  <!-- container -->
+<body
+<div class="anime" onclick="playVideo('naruto.mp4')">
+<img src="https://via.placeholder.com/150x220?text=Naruto">
+</div>
 
 <div class="video" id="videoPlayer"></div>
 
@@ -114,6 +115,8 @@ document.getElementById("videoPlayer").innerHTML =
 `<video width="100%" controls autoplay>
 <source src="${src}" type="video/mp4">
 </video>`;
+}
+</script>
 }
 </script>
 
